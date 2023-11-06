@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HairSalonComponent } from './pages/hair-salon/hair-salon.component';
 import { AboutComponent } from './pages/about/about.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AboutComponent } from './pages/about/about.component';
     HomePageComponent,
     GalleryComponent,
     HairSalonComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
