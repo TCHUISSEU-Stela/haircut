@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
 
@@ -104,44 +104,51 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
                     <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
-                    <h4 class="title"><a href="">Service 1</a></h4>
+                    <h4 class="title"><a routerLink="/hairSalon">Hair salon reservation</a></h4>
                     <p class="description">
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                     <div class="icon"><i class="bi bi-bounding-box"></i></div>
-                    <h4 class="title"><a href="">Service 2 </a></h4>
+                    <h4 class="title"><a href="">Product Promotion </a></h4>
                     <p class="description">
                     </p>
                 </div>
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="bi bi-bounding-box"></i></div>
+                    <h4 class="title"><a href="">book a hairdresser from a hairdressing salon </a></h4>
+                    <p class="description">
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h2>Haircut salons</h2>
-          </div>
-  
-          <div class="row">
-            <div *ngFor="let i of salons" class="col-lg-4 col-md-6 icon-box" data-aos="fade-up"
-            data-aos-delay="i.delay">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top " src="assets/img/{{i.image}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title title">{{i.name}}</h5>
-                    <p class="card-text"></p>
-                    <a [routerLink]="['/hairSalon',i.id]" class="btn btn-primary">See more</a>
-                </div>
+
+            <div class="section-title">
+                <h2>Haircut salons</h2>
             </div>
+
+            <div class="row">
+                <div *ngFor="let i of salons" class="col-lg-4 col-md-6 icon-box" data-aos="fade-up"
+                    data-aos-delay="i.delay">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top " src="assets/img/{{i.image}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title title">{{i.name}}</h5>
+                            <p class="card-text"></p>
+                            <a [routerLink]="['/hairSalon',i.id]" class="btn btn-primary">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-          
-          </div>
-  
-        </div>
-      </section>
+    </section>
 
 
     <section id="portfolio" class="portfolio section-bg">
