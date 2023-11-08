@@ -7,31 +7,29 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { HaircutDetailComponent } from './pages/haircut-detail/haircut-detail.component';
 
 const routes: Routes = [
   {
-    path: "",
-    component: HomePageComponent
+    path: "",component: HomePageComponent
   },
   {
-    path: "hairSalon",
-    component: HairSalonComponent
+    path: "hairSalon",  component: HairSalonComponent
+  }, 
+  {
+    path: "hairSalon/:salonId",  component: HaircutDetailComponent,
   },
   {
-    path: "about",
-    component:AboutComponent
+    path: "about", component: AboutComponent
   },
   {
-    path: "gallery",
-    component: GalleryComponent
+    path: "gallery",  component: GalleryComponent
   },
   {
-    path: "login",
-    component: LoginComponent
+    path: "login",component: LoginComponent
   },
   {
-    path: "register",
-    component: RegisterComponent
+    path: "register",   component: RegisterComponent
   }
 ];
 
