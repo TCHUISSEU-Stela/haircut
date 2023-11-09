@@ -13,6 +13,8 @@ import { HairSalonComponent } from './pages/hair-salon/hair-salon.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { HaircutDetailComponent } from './pages/haircut-detail/haircut-detail.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { RegisterComponent } from './pages/register/register.component';
     HairSalonComponent,
     AboutComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HaircutDetailComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
     
   ],
   providers: [],
